@@ -24,8 +24,7 @@ class RootServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('commerce_stock')
-            ->hasConfigFile()
-            ->hasMigration('create_commerce_stock_tables');
+            ->hasConfigFile();
     }
 
     public function packageRegistered(): void
